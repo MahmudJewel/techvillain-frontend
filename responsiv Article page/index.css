@@ -1,0 +1,76 @@
+/* ******************** start Article page **************************** */
+/* Article page body & div color with curv  */
+.bodycolor {
+  background: #e5ece9;
+}
+.divcolor {
+  background: white;
+}
+.curv {
+  border-radius: 15px;
+}
+
+/* left index active & hover  */
+table tr td a:hover,
+table tr td .active {
+  color: green;
+}
+
+/* start responsive left index */
+.burger {
+  margin: 5px;
+  display: none;
+  border-style: solid;
+  border-color: green;
+  border-radius: 5px;
+  width: 35px;
+}
+.burger div {
+  height: 2px;
+  width: 20px;
+  background: black;
+  margin: 5px;
+  transition: all 0.3s ease;
+  /* border-style: dotted; */
+  /* border-color: cadetblue; */
+}
+
+@media screen and (max-width: 990px) {
+  .burger {
+    display: block;
+  }
+
+  .nav_right {
+    position: absolute;
+    /* margin-top: 5px; */
+    right: 0px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    /* min-height: 100vh; */
+    width: 50%;
+    /* background: #006666; */
+    margin-right: 0;
+    /* transform: translateX(100%); */
+    transform: scale(0);
+    transition: transform 0.5s linear;
+  }
+  /* for layout 0*/
+  .nav_active {
+    transform: translateX(-95%);
+  }
+
+  .toggle .lin1 {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .toggle .lin2 {
+    opacity: 0;
+  }
+
+  .toggle .lin3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+/* end responsive left index */
+/* ******************** end Article page **************************** */
